@@ -1,0 +1,51 @@
+:root {
+    --border-color: rgb(116, 27, 27);
+    --square-back: wheat;
+}
+body {
+    display: flex;
+    margin: 10% 20%;
+}
+.main {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 50px;
+    border: 1px solid green;
+    gap: 12px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.color-picker {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+    cursor: pointer;
+}
+
+.label-range {
+    margin-bottom: -15px;
+}
+
+.divs-box {
+    border: 3px solid var(--border-color);
+}
+
+.square {
+    width: 15px;
+    height: 15px;
+    background-color: var(--square-back);
+}
