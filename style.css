@@ -6,7 +6,7 @@
 :root {
     --border-color: rgb(116, 27, 27);
     --square-back: wheat;
-    --main-back: rgb(159, 214, 236);
+    --main-back: rgb(203, 227, 236);
 }
 
 body {
@@ -31,12 +31,22 @@ button {
 }
 
 .color-picker {
-    border-radius: 100%;
+    border-radius: 50%;
     height: 100px;
     width: 100px;
     overflow: hidden;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type=color]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+  }
+  
+input[type=color]::-webkit-color-swatch-wrapper {
+    border: none;
+    padding: 0;
 }
 
 input {
