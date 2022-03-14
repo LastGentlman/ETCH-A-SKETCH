@@ -31,7 +31,7 @@ button {
 }
 
 .color-picker {
-    border-radius: 50%;
+    border-radius: 100%;
     height: 100px;
     width: 100px;
     overflow: hidden;
@@ -41,7 +41,7 @@ button {
 
 input[type=color]::-webkit-color-swatch {
     border: none;
-    border-radius: 50%;
+    border-radius: 100%;
   }
   
 input[type=color]::-webkit-color-swatch-wrapper {
