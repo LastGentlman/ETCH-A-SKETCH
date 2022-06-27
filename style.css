@@ -46,8 +46,8 @@ table {
 /*-------------------------------*/
 :root {
     --border-color: rgb(116, 27, 27);
-    --square-bg: wheat;
-    --main-bg: rgb(203, 227, 236);
+    --square-bg: rgb(222, 241, 250);
+    --main-bg: rgb(218, 255, 247);
 }
 
 body {
