@@ -46,17 +46,27 @@ table {
 /*-------------------------------*/
 :root {
     --border-color: rgb(116, 27, 27);
-    --square-back: wheat;
-    --main-back: rgb(203, 227, 236);
+    --square-bg: wheat;
+    --main-bg: rgb(203, 227, 236);
 }
 
 body {
     display: flex;
-    margin: 10% 20%;
-    background-color: var(--main-back);
+    background-color: var(--main-bg);
+    user-select: none;
+    justify-content: center;
 }
+
 .main {
+    margin-top: 20px;
     display: flex;
+}
+
+.flag {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    align-self: flex-end;
 }
 
 .menu {
@@ -69,6 +79,19 @@ body {
 
 button {
     cursor: pointer;
+    background: rgb(88, 3, 109);
+    border-radius: 18px;
+    height: 30px;
+    color: var(--main-bg);
+    font-weight: bold;
+    width: 150px;
+    border: 1px solid white;
+}
+
+button:active {
+    color: rgb(88, 3, 109);
+    background-color: var(--main-bg);
+    border: rgb(88, 3, 109) 1px solid;
 }
 
 .color-picker {
@@ -99,11 +122,14 @@ input {
 }
 
 .divs-box {
+    width: 500px;
+    height: 500px;
+    display: grid;
     border: 3px solid var(--border-color);
 }
 
 .square {
-    width: 15px;
-    height: 15px;
-    background-color: var(--square-back);
+    background-color: var(--square-bg);
+    margin: 0;
+    padding: 0;
 }

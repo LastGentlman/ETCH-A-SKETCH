@@ -12,13 +12,13 @@
 
     <div class="main">
         <div class="menu">
-            <input class="color-picker" type="color" value="#230052">
-            <button class="color-btn">Color Picked</button>
-            <button class="colourful-btn">Colourful Pincel</button>
-            <button class="eraser-btn">Eraser</button>
-            <button class="clear-btn">Clear Sketch</button>
+            <div class="flag"></div>
+            <input class="color-picker" type="color" value="#230052" onchange="colorIs('picker')">
+            <button class="colourful-btn" onclick="colorIs('colorful')">Colourful Pincel</button>
+            <button class="eraser-btn" onclick="colorIs('eraser')">Eraser</button>
+            <button class="clear-btn" onclick="clearBoard()">Clear Sketch</button>
             <label class="label-range" for="range">16x16</label>
-            <input class="size-range" type="range" name="range" value="16" min="2" max="32">
+            <input class="size-range" type="range" name="range" value="16" min="2" max="32" onchange='resize(this.value)'>
         </div>
 
         <div class="divs-box">
